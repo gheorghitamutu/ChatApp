@@ -17,14 +17,14 @@ import com.twitter.sdk.android.core.TwitterCore;
 import io.fabric.sdk.android.Fabric;
 
 /**
- * Created by Gicu on 4/11/2017.
+ * Created by X on 4/11/2017.
  */
 
 public class DigitsActivity extends Application {
     private static final String TWITTER_KEY = "XoqWKdrJgxx759sWXktKo9zeZ";
     private static final String TWITTER_SECRET = "8EMaULgVDZ232LL1F2QE7iPtzvof4c9yIu3AMdAHiWMWvQtCTo";
-    private DatabaseReference database;
     private static AuthCallback authCallback;
+    private DatabaseReference database;
 
     @Override
     public void onCreate() {
@@ -39,7 +39,7 @@ public class DigitsActivity extends Application {
                 // Do something with the session
                 Toast.makeText(getApplicationContext(), "Authentication successful for "
                         + phoneNumber, Toast.LENGTH_LONG).show();
-                writeNewUser("0008", phoneNumber, "fuck@me.com");
+                writeNewUser("0008", phoneNumber, "test@me.com");
             }
 
             @Override
